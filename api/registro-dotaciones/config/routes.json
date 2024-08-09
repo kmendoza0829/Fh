@@ -1,0 +1,92 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/registro-dotaciones",
+      "handler": "registro-dotaciones.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/registro-dotaciones-all",
+      "handler": "registro-dotaciones.findRegistros",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dotaciones-totales",
+      "handler": "registro-dotaciones.findDotacionesTotales",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dotaciones-by-user",
+      "handler": "registro-dotaciones.findProductosByUser",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/findDotacionesAndSeguridadDotaciones",
+      "handler": "registro-dotaciones.findDotacionesAndSeguridadDotaciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/assignDotacionesAndSeguridadDotaciones",
+      "handler": "registro-dotaciones.assignDotacionesAndSeguridadDotaciones",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/registro-dotaciones/count",
+      "handler": "registro-dotaciones.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/registro-dotaciones/:id",
+      "handler": "registro-dotaciones.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/registro-dotaciones",
+      "handler": "registro-dotaciones.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/registro-dotaciones/:id",
+      "handler": "registro-dotaciones.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/registro-dotaciones/:id",
+      "handler": "registro-dotaciones.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

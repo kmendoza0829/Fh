@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_informe_ensayo_item_tipo_junta_seccions",
+  "info": {
+    "name": "tipoJuntaSeccion",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tipoJuntaSeccion": {
+      "type": "string"
+    },
+    "data": {
+      "type": "component",
+      "repeatable": true,
+      "component": "informe-ensayo-subitem.inspec-soldadura-informe-ensayo"
+    }
+  }
+}

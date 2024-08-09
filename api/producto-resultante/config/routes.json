@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/producto-resultantes",
+      "handler": "producto-resultante.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/producto-resultantes/count",
+      "handler": "producto-resultante.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/producto-resultantes/:id",
+      "handler": "producto-resultante.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/producto-resultantes",
+      "handler": "producto-resultante.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/producto-resultantes-by-date",
+      "handler": "producto-resultante.findByDate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/producto-resultantes-by-date-galvanizado",
+      "handler": "producto-resultante.findByDateGalvanizado",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/producto-resultantes-by-name-and-date",
+      "handler": "producto-resultante.findByNameAndDate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/producto-resultantes/:id",
+      "handler": "producto-resultante.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/producto-resultantes/:id",
+      "handler": "producto-resultante.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

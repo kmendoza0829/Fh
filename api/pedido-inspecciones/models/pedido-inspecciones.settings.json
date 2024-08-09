@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedido_inspecciones",
+  "info": {
+    "name": "PedidoInspecciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "archivos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "observaciones": {
+      "type": "string"
+    },
+    "area": {
+      "type": "enumeration",
+      "enum": [
+        "cortes"
+      ]
+    }
+  }
+}

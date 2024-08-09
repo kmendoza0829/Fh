@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pedidos",
+      "handler": "pedidos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedidos_paginated",
+      "handler": "pedidos.findpaginated",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedidos_count",
+      "handler": "pedidos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedidosReporteGeneral/:idCliente/:fi/:ff",
+      "handler": "pedidos.listReporteGeneral",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedidosReporteProductividadGeneral/:fi/:ff",
+      "handler": "pedidos.listReporteProductividadGeneral",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedidos/:id",
+      "handler": "pedidos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/validate-numero-pedido/:numeroPedido",
+      "handler": "pedidos.validateNumeroPedido",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pedidos",
+      "handler": "pedidos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pedidos/:id",
+      "handler": "pedidos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pedidos/:id",
+      "handler": "pedidos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

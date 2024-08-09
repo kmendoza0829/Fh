@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proveedores_almacens",
+  "info": {
+    "name": "proveedoresAlmacen",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombreEmpresa": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "integer"
+    },
+    "nombreContacto": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "nit": {
+      "type": "string"
+    },
+    "cc": {
+      "type": "string"
+    },
+    "entrada_productos": {
+      "via": "proveedor",
+      "collection": "entrada-productos"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inspec_liquidos_penetrantes",
+  "info": {
+    "name": "inspecLiquidosPenetrantes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "cliente": {
+      "model": "clientes"
+    },
+    "proyecto": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "numInforme": {
+      "type": "integer"
+    },
+    "norma": {
+      "type": "string"
+    },
+    "equipo": {
+      "type": "string"
+    },
+    "especMaterial": {
+      "type": "string"
+    },
+    "tempEnsayo": {
+      "type": "decimal"
+    },
+    "espesor": {
+      "type": "decimal",
+      "min": 0
+    },
+    "junta": {
+      "type": "string"
+    },
+    "estadoSuperficie": {
+      "type": "string"
+    },
+    "supInspeccion": {
+      "type": "string"
+    },
+    "plano": {
+      "type": "string"
+    },
+    "archivos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "evaluacion": {
+      "type": "string"
+    },
+    "procesoSoldaduraManual": {
+      "type": "boolean"
+    },
+    "procesoSoldaduraAuto": {
+      "type": "boolean"
+    }
+  }
+}

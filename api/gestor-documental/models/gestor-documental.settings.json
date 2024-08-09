@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gestor_documentals",
+  "info": {
+    "name": "gestorDocumental",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombreCarpeta": {
+      "type": "string",
+      "required": true
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "item-gestor-documental.gestor-documental"
+    },
+    "codigo": {
+      "type": "string"
+    },
+    "observaciones": {
+      "type": "string"
+    },
+    "areas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "item-gestor-documental.permisos-gestor-documental"
+    },
+    "subCarpetas": {
+      "collection": "gestor-documental",
+      "via": "carpetaPadre"
+    },
+    "carpetaPadre": {
+      "model": "gestor-documental",
+      "via": "subCarpetas"
+    }
+  }
+}

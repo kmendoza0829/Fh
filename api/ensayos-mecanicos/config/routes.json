@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ensayos-mecanicos",
+      "handler": "ensayos-mecanicos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ensayos-mecanicos/count",
+      "handler": "ensayos-mecanicos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ensayos-mecanicos/:id",
+      "handler": "ensayos-mecanicos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ensayos-mecanicos",
+      "handler": "ensayos-mecanicos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ensayos-mecanicos/:id",
+      "handler": "ensayos-mecanicos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ensayos-mecanicos/:id",
+      "handler": "ensayos-mecanicos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

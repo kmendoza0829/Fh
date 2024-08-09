@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inspec_proceso_galvs",
+  "info": {
+    "name": "InspecProcesoGalv",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "dia": {
+      "type": "date"
+    },
+    "pedido": {
+      "model": "pedidos"
+    },
+    "tempInmersion": {
+      "type": "decimal"
+    },
+    "espesorRecubrimiento": {
+      "type": "component",
+      "repeatable": false,
+      "component": "espesor-recubrimiento.inspec-proceso"
+    },
+    "adherencia": {
+      "type": "string"
+    },
+    "tiempoTotal": {
+      "type": "string"
+    },
+    "hora": {
+      "type": "string"
+    },
+    "pedidoProducto": {
+      "model": "pedido-productos"
+    }
+  }
+}

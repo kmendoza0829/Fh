@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productos_dotaciones",
+  "info": {
+    "name": "ProductosDotaciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombreProducto": {
+      "type": "string"
+    },
+    "stockProducto": {
+      "type": "integer"
+    },
+    "proveedor": {
+      "model": "proveedores-dotaciones"
+    },
+    "tallaProducto": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_item_gestor_documental_gestor_documentals",
+  "info": {
+    "name": "gestorDocumental",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "archivo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "responsable": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "estado": {
+      "type": "enumeration",
+      "enum": [
+        "VIGENTE",
+        "OBSOLETO"
+      ],
+      "default": "VIGENTE"
+    },
+    "version": {
+      "type": "decimal",
+      "min": 0,
+      "default": 1
+    },
+    "tipoDocumento": {
+      "type": "string"
+    },
+    "observaciones": {
+      "type": "string"
+    }
+  }
+}

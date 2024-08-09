@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "control_empleados",
+  "info": {
+    "name": "controlEmpleados",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "turno": {
+      "type": "string"
+    },
+    "fechaIngreso": {
+      "type": "date"
+    },
+    "horaIngreso": {
+      "type": "string"
+    },
+    "horaSalida": {
+      "type": "string"
+    },
+    "temperatura": {
+      "type": "string"
+    },
+    "fechaSalida": {
+      "type": "date"
+    },
+    "empleado": {
+      "via": "controlEmpleados",
+      "model": "empleados"
+    }
+  }
+}

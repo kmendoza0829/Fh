@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/autoincremental",
+      "handler": "autoincremental.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/autoincremental",
+      "handler": "autoincremental.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/autoincremental",
+      "handler": "autoincremental.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

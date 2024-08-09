@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entrada_productos",
+  "info": {
+    "name": "entradaProductos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tipoProducto": {
+      "type": "string"
+    },
+    "cantidad": {
+      "type": "integer"
+    },
+    "precioCompra": {
+      "type": "decimal"
+    },
+    "numeroFactura": {
+      "type": "string"
+    },
+    "unidadMedida": {
+      "type": "string"
+    },
+    "codigoProducto": {
+      "type": "string"
+    },
+    "proveedor": {
+      "model": "proveedores-almacen",
+      "via": "entrada_productos"
+    }
+  }
+}

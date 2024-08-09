@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_informe_ensayo_inspec_soldadura_informe_ensayos",
+  "info": {
+    "name": "inspecSoldaduraInformeEnsayo",
+    "icon": "grin-squint",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "empleado": {
+      "model": "empleados"
+    },
+    "amp": {
+      "type": "decimal"
+    },
+    "vol": {
+      "type": "decimal"
+    },
+    "vel": {
+      "type": "decimal"
+    },
+    "parametroControlado": {
+      "type": "string"
+    },
+    "paramControlado": {
+      "type": "json"
+    }
+  }
+}

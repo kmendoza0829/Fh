@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/productos-pendientes",
+      "handler": "productos-pendientes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/productos-pendientes/count",
+      "handler": "productos-pendientes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/productos-pendientes/:id",
+      "handler": "productos-pendientes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/productos-pendientes",
+      "handler": "productos-pendientes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/productos-pendientes/:id",
+      "handler": "productos-pendientes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/productos-pendientes/:id",
+      "handler": "productos-pendientes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

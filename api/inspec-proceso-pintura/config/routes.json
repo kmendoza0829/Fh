@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/inspec-proceso-pinturas",
+      "handler": "inspec-proceso-pintura.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inspec-proceso-pinturas/count",
+      "handler": "inspec-proceso-pintura.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inspec-proceso-pinturas/:id",
+      "handler": "inspec-proceso-pintura.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/inspec-proceso-pinturas",
+      "handler": "inspec-proceso-pintura.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/inspec-proceso-pinturas/:id",
+      "handler": "inspec-proceso-pintura.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/inspec-proceso-pinturas/:id",
+      "handler": "inspec-proceso-pintura.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

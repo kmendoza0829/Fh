@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/actividad-piezas-inventarios",
+      "handler": "actividad-piezas-inventario.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/actividad-piezas-inventarios/count",
+      "handler": "actividad-piezas-inventario.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/actividad-piezas-inventarios/:id",
+      "handler": "actividad-piezas-inventario.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/actividad-piezas-inventarios",
+      "handler": "actividad-piezas-inventario.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/actividad-piezas-inventarios/:id",
+      "handler": "actividad-piezas-inventario.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/actividad-piezas-inventarios/:id",
+      "handler": "actividad-piezas-inventario.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

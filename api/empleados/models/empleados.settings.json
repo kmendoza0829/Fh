@@ -1,0 +1,89 @@
+{
+  "kind": "collectionType",
+  "collectionName": "empleados",
+  "info": {
+    "name": "Empleados",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombreEmpleado": {
+      "type": "string"
+    },
+    "eps": {
+      "type": "string"
+    },
+    "arl": {
+      "type": "string"
+    },
+    "documentoEmpleado": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "biginteger"
+    },
+    "actividad": {
+      "type": "enumeration",
+      "enum": [
+        "varios",
+        "corte",
+        "punzonado",
+        "figurado",
+        "marcado",
+        "soldadura",
+        "inyecccion",
+        "galvanizado",
+        "pintura",
+        "fundicion"
+      ]
+    },
+    "registroDotaciones": {
+      "collection": "registro-dotaciones",
+      "via": "empleado"
+    },
+    "area": {
+      "type": "enumeration",
+      "enum": [
+        "metalmecanica",
+        "estructuras",
+        "galvanizado",
+        "pintura",
+        "almacen",
+        "administrativos",
+        "transporte"
+      ]
+    },
+    "registroSDotaciones": {
+      "collection": "registro-seguridad-dotaciones",
+      "via": "empleado"
+    },
+    "dotacionesConfirmadas": {
+      "type": "boolean"
+    },
+    "trabajando": {
+      "type": "boolean"
+    },
+    "controlEmpleadoActual": {
+      "model": "control-empleados"
+    },
+    "controlEmpleados": {
+      "collection": "control-empleados",
+      "via": "empleado"
+    },
+    "tipoSangre": {
+      "type": "string"
+    },
+    "salida_productos": {
+      "collection": "salida-productos",
+      "via": "empleado"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

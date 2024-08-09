@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/actividades",
+      "handler": "actividad.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/actividadesByDate",
+      "handler": "actividad.findByDate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/actividadesPendientesPaginated",
+      "handler": "actividad.findPendientesPaginated",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/actividadesPendientesPaginated/count",
+      "handler": "actividad.countPendientesPaginated",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/actividades/count",
+      "handler": "actividad.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/actividades/:id",
+      "handler": "actividad.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/actividades",
+      "handler": "actividad.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/actividades/:id",
+      "handler": "actividad.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/actividades/:id",
+      "handler": "actividad.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

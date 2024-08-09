@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tipo-productos",
+      "handler": "tipo-productos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipo-productos/count",
+      "handler": "tipo-productos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tipo-productos/:id",
+      "handler": "tipo-productos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tipo-productos",
+      "handler": "tipo-productos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tipo-productos-excel",
+      "handler": "tipo-productos.createProductosDesdeExcel",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tipo-productos-by-name-and-date",
+      "handler": "tipo-productos.findByNameAndDate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tipo-productos/:id",
+      "handler": "tipo-productos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tipo-productos/:id",
+      "handler": "tipo-productos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

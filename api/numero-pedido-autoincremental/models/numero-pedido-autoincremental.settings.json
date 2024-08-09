@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "numero_pedido_autoincrementals",
+  "info": {
+    "name": "NumeroPedidoAutoincremental",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "numeroPedido": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

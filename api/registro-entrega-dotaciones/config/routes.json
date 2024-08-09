@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/registro-entrega-dotaciones",
+      "handler": "registro-entrega-dotaciones.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/registro-entrega-dotaciones/count",
+      "handler": "registro-entrega-dotaciones.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/registro-entrega-dotaciones/:id",
+      "handler": "registro-entrega-dotaciones.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/registro-entrega-dotaciones",
+      "handler": "registro-entrega-dotaciones.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/registro-entrega-dotaciones/:id",
+      "handler": "registro-entrega-dotaciones.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/registro-entrega-dotaciones/:id",
+      "handler": "registro-entrega-dotaciones.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

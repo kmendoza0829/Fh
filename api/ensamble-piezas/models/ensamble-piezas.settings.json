@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ensamble_piezas",
+  "info": {
+    "name": "ensamblePiezas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "cantidad": {
+      "type": "integer"
+    },
+    "codigoProducto": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string",
+      "default": "Pendiente"
+    },
+    "idPieza": {
+      "type": "string"
+    },
+    "ensamble": {
+      "via": "piezas",
+      "model": "ensamble"
+    },
+    "productos_pendiente": {
+      "model": "productos-pendientes",
+      "via": "ensamble_pieza"
+    },
+    "tipo_producto": {
+      "model": "tipo-productos",
+      "via": "ensamble_piezas"
+    }
+  }
+}

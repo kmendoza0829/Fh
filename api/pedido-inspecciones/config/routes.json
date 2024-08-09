@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pedido-inspecciones",
+      "handler": "pedido-inspecciones.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedido-inspecciones/count",
+      "handler": "pedido-inspecciones.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedido-inspecciones/:id",
+      "handler": "pedido-inspecciones.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pedido-inspecciones",
+      "handler": "pedido-inspecciones.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pedido-inspecciones/:id",
+      "handler": "pedido-inspecciones.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pedido-inspecciones/:id",
+      "handler": "pedido-inspecciones.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

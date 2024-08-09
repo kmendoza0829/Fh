@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/actividad-piezas-sobrantes",
+      "handler": "actividad-piezas-sobrantes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/actividad-piezas-sobrantes/count",
+      "handler": "actividad-piezas-sobrantes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/actividad-piezas-sobrantes/:id",
+      "handler": "actividad-piezas-sobrantes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/actividad-piezas-sobrantes",
+      "handler": "actividad-piezas-sobrantes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/actividad-piezas-sobrantes/:id",
+      "handler": "actividad-piezas-sobrantes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/actividad-piezas-sobrantes/:id",
+      "handler": "actividad-piezas-sobrantes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/control-empleados",
+      "handler": "control-empleados.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/findBetween",
+      "handler": "control-empleados.findBetween",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/findBetweenRecargos",
+      "handler": "control-empleados.findBetweenRecargos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/control-empleados/count",
+      "handler": "control-empleados.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/control-empleados/:id",
+      "handler": "control-empleados.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/control-empleados/:empleadoId",
+      "handler": "control-empleados.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/control-empleados/:id",
+      "handler": "control-empleados.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/control-empleados/:empleado/:id",
+      "handler": "control-empleados.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

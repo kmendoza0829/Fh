@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bodega_almacens",
+  "info": {
+    "name": "BodegaAlmacen",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    }
+  }
+}

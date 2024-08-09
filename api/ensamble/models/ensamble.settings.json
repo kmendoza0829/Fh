@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ensambles",
+  "info": {
+    "name": "ensamble",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "pedido": {
+      "model": "pedidos",
+      "via": "ensambles"
+    },
+    "pedidoProducto": {
+      "model": "pedido-productos"
+    },
+    "cantidadEnsamblada": {
+      "type": "integer"
+    },
+    "piezas": {
+      "collection": "ensamble-piezas",
+      "via": "ensamble"
+    }
+  }
+}

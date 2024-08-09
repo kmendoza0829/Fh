@@ -1,0 +1,107 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedido_productos",
+  "info": {
+    "name": "PedidoProductos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "codigoProducto": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "especificacion": {
+      "type": "string"
+    },
+    "peso": {
+      "type": "decimal"
+    },
+    "cantidad": {
+      "type": "integer"
+    },
+    "actividades": {
+      "collection": "actividad",
+      "via": "pedido_producto"
+    },
+    "despachos": {
+      "collection": "pedidos-productos-despachos",
+      "via": "producto"
+    },
+    "cantidadDespachada": {
+      "type": "integer",
+      "default": 0,
+      "min": 0
+    },
+    "pedido": {
+      "model": "pedidos",
+      "via": "productos"
+    },
+    "esComercializable": {
+      "type": "boolean",
+      "default": false
+    },
+    "unidadMedida": {
+      "type": "string"
+    },
+    "productos_pendiente": {
+      "model": "productos-pendientes",
+      "via": "pedido_producto"
+    },
+    "estadoCantidad": {
+      "type": "string"
+    },
+    "tipo_producto": {
+      "model": "tipo-productos",
+      "via": "pedido_productos"
+    },
+    "corte": {
+      "type": "boolean",
+      "default": true
+    },
+    "punzonado": {
+      "type": "boolean",
+      "default": true
+    },
+    "roscado": {
+      "type": "boolean",
+      "default": true
+    },
+    "figurado": {
+      "type": "boolean",
+      "default": true
+    },
+    "marcado": {
+      "type": "boolean",
+      "default": true
+    },
+    "soldadura": {
+      "type": "boolean",
+      "default": true
+    },
+    "inyeccion": {
+      "type": "boolean",
+      "default": true
+    },
+    "galvanizado": {
+      "type": "boolean",
+      "default": true
+    },
+    "pintura": {
+      "type": "boolean",
+      "default": true
+    },
+    "fundicion": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

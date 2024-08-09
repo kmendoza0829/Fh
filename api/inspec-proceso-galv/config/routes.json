@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/inspec-proceso-galvs",
+      "handler": "inspec-proceso-galv.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inspec-proceso-galvs/count",
+      "handler": "inspec-proceso-galv.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inspec-proceso-galvs/:id",
+      "handler": "inspec-proceso-galv.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/inspec-proceso-galvs",
+      "handler": "inspec-proceso-galv.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/inspec-proceso-galvs/:id",
+      "handler": "inspec-proceso-galv.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/inspec-proceso-galvs/:id",
+      "handler": "inspec-proceso-galv.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pedido-productos-seleccionables",
+      "handler": "pedido-productos-seleccionables.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedido-productos-seleccionables/count",
+      "handler": "pedido-productos-seleccionables.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedido-productos-seleccionables/:id",
+      "handler": "pedido-productos-seleccionables.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pedido-productos-seleccionables",
+      "handler": "pedido-productos-seleccionables.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pedido-productos-seleccionables-excel",
+      "handler": "pedido-productos-seleccionables.createProductosDesdeExcel",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pedido-productos-seleccionables/:id",
+      "handler": "pedido-productos-seleccionables.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pedido-productos-seleccionables/:id",
+      "handler": "pedido-productos-seleccionables.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

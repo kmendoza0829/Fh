@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sedes",
+  "info": {
+    "name": "Sede",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ubicacion": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "nombre_sede": {
+      "type": "string"
+    },
+    "contacto": {
+      "type": "string"
+    },
+    "telefonoSede": {
+      "type": "biginteger"
+    }
+  }
+}

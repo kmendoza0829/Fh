@@ -1,0 +1,84 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ensambles",
+      "handler": "ensamble.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ensamblesPedido",
+      "handler": "ensamble.findWithPedido",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ensamblesBetween",
+      "handler": "ensamble.findBetween",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ensamblesByNameAndDate",
+      "handler": "ensamble.findByNameAndDate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ensambles/count",
+      "handler": "ensamble.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ensambles/:id",
+      "handler": "ensamble.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ensambles",
+      "handler": "ensamble.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ensambles/:id",
+      "handler": "ensamble.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ensamblesWithProducto",
+      "handler": "ensamble.putWithProducto",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ensambles/:id",
+      "handler": "ensamble.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

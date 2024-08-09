@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/materias-primas-recepcions",
+      "handler": "materias-primas-recepcion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/materias-primas-recepcions/count",
+      "handler": "materias-primas-recepcion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/materias-primas-recepcions/:id",
+      "handler": "materias-primas-recepcion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/materias-primas-recepcions",
+      "handler": "materias-primas-recepcion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/materias-primas-recepcions/:id",
+      "handler": "materias-primas-recepcion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/materias-primas-recepcions/:id",
+      "handler": "materias-primas-recepcion.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

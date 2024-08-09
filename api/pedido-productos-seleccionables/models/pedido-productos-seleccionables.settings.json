@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedido_productos_seleccionables",
+  "info": {
+    "name": "PedidoProductosSeleccionables",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "codigoProducto": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    }
+  }
+}

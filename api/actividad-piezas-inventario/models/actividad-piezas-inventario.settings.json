@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "actividad_piezas_inventarios",
+  "info": {
+    "name": "ActividadPiezasInventario",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "stock": {
+      "type": "integer"
+    }
+  }
+}

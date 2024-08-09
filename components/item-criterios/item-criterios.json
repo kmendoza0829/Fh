@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_item_criterios",
+  "info": {
+    "name": "item_criterios",
+    "icon": "sitemap",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

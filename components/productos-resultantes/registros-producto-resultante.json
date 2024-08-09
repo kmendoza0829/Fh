@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_productos_resultantes_registros_producto_resultantes",
+  "info": {
+    "name": "registrosProductoResultante",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cantidadConforme": {
+      "type": "integer"
+    },
+    "cantidadNoConforme": {
+      "type": "integer"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "responsable": {
+      "model": "empleados"
+    },
+    "especificacion": {
+      "type": "string"
+    }
+  }
+}

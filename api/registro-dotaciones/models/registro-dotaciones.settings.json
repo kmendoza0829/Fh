@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "registro_dotaciones",
+  "info": {
+    "name": "registroDotaciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "cantidadRequerida": {
+      "type": "integer"
+    },
+    "productoDotaciones": {
+      "model": "productos-dotaciones"
+    },
+    "cantidadPendiente": {
+      "type": "integer"
+    },
+    "cantidadTotal": {
+      "type": "integer"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "confirmado": {
+      "type": "boolean"
+    },
+    "empleado": {
+      "via": "registroDotaciones",
+      "model": "empleados"
+    }
+  }
+}

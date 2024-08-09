@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/modificaciones-personal-registros",
+      "handler": "modificaciones-personal-registros.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/modificaciones-personal-registros/count",
+      "handler": "modificaciones-personal-registros.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/modificaciones-personal-registros/:id",
+      "handler": "modificaciones-personal-registros.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/modificaciones-personal-registros",
+      "handler": "modificaciones-personal-registros.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/modificaciones-personal-registros/:id",
+      "handler": "modificaciones-personal-registros.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/modificaciones-personal-registros/:id",
+      "handler": "modificaciones-personal-registros.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

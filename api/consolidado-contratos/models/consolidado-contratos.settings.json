@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "consolidado_contratos",
+  "info": {
+    "name": "ConsolidadoContratos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "objeto": {
+      "type": "text"
+    },
+    "fechaInicio": {
+      "type": "string"
+    },
+    "fechaVencimiento": {
+      "type": "string"
+    },
+    "ampliacion": {
+      "type": "string"
+    },
+    "fechaFinalizacion": {
+      "type": "string"
+    },
+    "pedidos": {
+      "via": "contrato",
+      "collection": "pedidos"
+    },
+    "valorContrato": {
+      "type": "decimal"
+    },
+    "saldo": {
+      "type": "decimal"
+    },
+    "porcentajeSaldo": {
+      "type": "decimal"
+    },
+    "numeroContrato": {
+      "type": "string"
+    },
+    "cliente": {
+      "model": "clientes"
+    }
+  }
+}

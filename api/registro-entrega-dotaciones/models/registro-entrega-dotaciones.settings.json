@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "registro_entrega_dotaciones",
+  "info": {
+    "name": "RegistroEntregaDotaciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "fechaEntrega": {
+      "type": "date",
+      "required": true
+    },
+    "cantidadEntregada": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "fechaVencimiento": {
+      "type": "date",
+      "required": true,
+      "private": false
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

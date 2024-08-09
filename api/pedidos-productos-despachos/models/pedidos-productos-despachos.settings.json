@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedido_productos_despachos",
+  "info": {
+    "name": "pedidoProductosDespachos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "cantidadDespachada": {
+      "type": "decimal"
+    },
+    "pedido_despacho": {
+      "via": "pedidoProductosDespachos",
+      "model": "pedido-despachos"
+    },
+    "producto": {
+      "via": "despachos",
+      "model": "pedido-productos"
+    }
+  }
+}

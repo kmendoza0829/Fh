@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "registro_seguridad_dotaciones",
+  "info": {
+    "name": "RegistroSeguridadDotaciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "cantidadRequerida": {
+      "type": "integer"
+    },
+    "cantidadPendiente": {
+      "type": "integer"
+    },
+    "cantidadTotal": {
+      "type": "integer"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "seguridadDotacion": {
+      "model": "seguridad-dotaciones"
+    },
+    "confirmado": {
+      "type": "boolean"
+    },
+    "empleado": {
+      "via": "registroSDotaciones",
+      "model": "empleados"
+    }
+  }
+}

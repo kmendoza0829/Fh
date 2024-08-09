@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "producto_resultantes",
+  "info": {
+    "name": "productoResultante",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "totalRequerido": {
+      "type": "integer"
+    },
+    "registrosProductoResultante": {
+      "type": "component",
+      "repeatable": true,
+      "component": "productos-resultantes.registros-producto-resultante"
+    },
+    "actividad": {
+      "model": "actividad",
+      "via": "productosResultantes"
+    }
+  }
+}

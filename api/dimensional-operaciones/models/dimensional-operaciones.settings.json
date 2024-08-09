@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dimensional_operaciones",
+  "info": {
+    "name": "DimensionalOperaciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "operacion": {
+      "type": "string"
+    },
+    "producto": {
+      "model": "pedido-productos"
+    },
+    "cantidadTotal": {
+      "type": "integer"
+    },
+    "fechaInicio": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "string"
+    },
+    "archivos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "ordenTrabajo": {
+      "model": "pedidos"
+    }
+  }
+}

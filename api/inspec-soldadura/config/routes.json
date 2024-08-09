@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/inspec-soldaduras",
+      "handler": "inspec-soldadura.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inspec-soldaduras/count",
+      "handler": "inspec-soldadura.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inspec-soldaduras/:id",
+      "handler": "inspec-soldadura.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/inspec-soldaduras",
+      "handler": "inspec-soldadura.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/inspec-soldaduras/:id",
+      "handler": "inspec-soldadura.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/inspec-soldaduras/:id",
+      "handler": "inspec-soldadura.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

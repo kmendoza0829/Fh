@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "notificaciones",
+  "info": {
+    "name": "notificaciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "materiasPrimasPendientesActividades": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

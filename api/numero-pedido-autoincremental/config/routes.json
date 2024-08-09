@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/numero-pedido-autoincremental",
+      "handler": "numero-pedido-autoincremental.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/numero-pedido-autoincremental",
+      "handler": "numero-pedido-autoincremental.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/numero-pedido-autoincremental",
+      "handler": "numero-pedido-autoincremental.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

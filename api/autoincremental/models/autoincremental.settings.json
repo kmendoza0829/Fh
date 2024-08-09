@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "autoincrementals",
+  "info": {
+    "name": "autoincremental",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "remision": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

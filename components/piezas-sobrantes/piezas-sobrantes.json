@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_piezas_sobrantes_piezas_sobrantes",
+  "info": {
+    "name": "piezasSobrantes",
+    "icon": "bars",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "piezaInventario": {
+      "model": "actividad-piezas-inventario"
+    },
+    "cantidad": {
+      "type": "integer",
+      "default": 0,
+      "min": 0
+    },
+    "responsable": {
+      "model": "empleados"
+    }
+  }
+}

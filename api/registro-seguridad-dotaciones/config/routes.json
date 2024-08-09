@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/registro-seguridad-dotaciones",
+      "handler": "registro-seguridad-dotaciones.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/registro-seguridad-dotaciones/count",
+      "handler": "registro-seguridad-dotaciones.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/registro-seguridad-dotaciones/:id",
+      "handler": "registro-seguridad-dotaciones.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/registro-seguridad-dotaciones",
+      "handler": "registro-seguridad-dotaciones.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/registro-seguridad-dotaciones/:id",
+      "handler": "registro-seguridad-dotaciones.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/registro-seguridad-dotaciones/:id",
+      "handler": "registro-seguridad-dotaciones.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

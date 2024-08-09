@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_item_gestor_documental_permisos_gestor_documentals",
+  "info": {
+    "name": "permisosGestorDocumental",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "area": {
+      "type": "string"
+    }
+  }
+}

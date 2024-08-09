@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedidos",
+  "info": {
+    "name": "pedidos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "fecha": {
+      "type": "date"
+    },
+    "tiempoEntrega": {
+      "type": "date"
+    },
+    "ordenCliente": {
+      "type": "string"
+    },
+    "fechaProduccion": {
+      "type": "date"
+    },
+    "sitioEntrega": {
+      "type": "string"
+    },
+    "fechaEntregaFinal": {
+      "type": "date"
+    },
+    "totalPeso": {
+      "type": "decimal"
+    },
+    "observaciones": {
+      "type": "string"
+    },
+    "elaboro": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "porcentaje": {
+      "type": "decimal",
+      "min": 0,
+      "max": 100,
+      "default": 0
+    },
+    "estado": {
+      "type": "enumeration",
+      "enum": [
+        "fabricar",
+        "ensamble",
+        "listo_para_despacho"
+      ]
+    },
+    "cliente": {
+      "via": "pedidos",
+      "model": "clientes"
+    },
+    "pedidoInspecciones": {
+      "collection": "pedido-inspecciones"
+    },
+    "porcentajesActividades": {
+      "type": "component",
+      "repeatable": false,
+      "component": "porcentajes.porcentajes-actividades"
+    },
+    "inspecProcesoGalvs": {
+      "collection": "inspec-proceso-galv"
+    },
+    "inspecProcesoPinturas": {
+      "collection": "inspec-proceso-pintura"
+    },
+    "inspecSoldadura": {
+      "model": "inspec-soldadura"
+    },
+    "inspecLiquidosPenetrantes": {
+      "model": "inspec-liquidos-penetrantes"
+    },
+    "contrato": {
+      "model": "consolidado-contratos",
+      "via": "pedidos"
+    },
+    "valor": {
+      "type": "decimal"
+    },
+    "numeroPedido": {
+      "type": "integer"
+    },
+    "prioridad": {
+      "type": "boolean",
+      "default": false
+    },
+    "productos": {
+      "via": "pedido",
+      "collection": "pedido-productos"
+    },
+    "ensambles": {
+      "via": "pedido",
+      "collection": "ensamble"
+    }
+  }
+}

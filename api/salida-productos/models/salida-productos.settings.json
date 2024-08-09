@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "salida_productos",
+  "info": {
+    "name": "salidaProductos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tipoProducto": {
+      "type": "string"
+    },
+    "cantidad": {
+      "type": "integer"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "hora": {
+      "type": "time"
+    },
+    "empleado": {
+      "via": "salida_productos",
+      "model": "empleados"
+    },
+    "unidadMedida": {
+      "type": "string"
+    },
+    "codigoProducto": {
+      "type": "string"
+    }
+  }
+}

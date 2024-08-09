@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/productos-dotaciones",
+      "handler": "productos-dotaciones.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/productos-dotaciones/count",
+      "handler": "productos-dotaciones.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/productos-dotaciones/:id",
+      "handler": "productos-dotaciones.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/productos-dotaciones",
+      "handler": "productos-dotaciones.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/productos-dotaciones/:id",
+      "handler": "productos-dotaciones.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/productos-dotaciones/:id",
+      "handler": "productos-dotaciones.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "informe_dimensionales",
+  "info": {
+    "name": "InformeDimensionales",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "descripcion": {
+      "type": "string"
+    },
+    "cliente": {
+      "model": "clientes"
+    },
+    "norma": {
+      "type": "string"
+    },
+    "informe": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "string"
+    },
+    "cantidad": {
+      "type": "integer"
+    },
+    "archivos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

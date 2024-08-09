@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/criterios-aceptacions",
+      "handler": "criterios-aceptacion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/criterios-aceptacions/count",
+      "handler": "criterios-aceptacion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/criterios-aceptacions/:id",
+      "handler": "criterios-aceptacion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/criterios-aceptacions",
+      "handler": "criterios-aceptacion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/criterios-aceptacions/:id",
+      "handler": "criterios-aceptacion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/criterios-aceptacions/:id",
+      "handler": "criterios-aceptacion.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "criterios_aceptacion",
+  "info": {
+    "name": "CriteriosAceptacion",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dimensional-operaciones",
+      "handler": "dimensional-operaciones.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dimensional-operaciones/count",
+      "handler": "dimensional-operaciones.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dimensional-operaciones/:id",
+      "handler": "dimensional-operaciones.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dimensional-operaciones",
+      "handler": "dimensional-operaciones.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dimensional-operaciones/:id",
+      "handler": "dimensional-operaciones.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dimensional-operaciones/:id",
+      "handler": "dimensional-operaciones.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

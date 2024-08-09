@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "actividad_piezas_sobrantes",
+  "info": {
+    "name": "ActividadPiezasSobrantes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "piezasSobrantes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "piezas-sobrantes.piezas-sobrantes"
+    }
+  }
+}

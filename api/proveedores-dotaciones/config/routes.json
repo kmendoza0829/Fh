@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/proveedores-dotaciones",
+      "handler": "proveedores-dotaciones.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proveedores-dotaciones/count",
+      "handler": "proveedores-dotaciones.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proveedores-dotaciones/:id",
+      "handler": "proveedores-dotaciones.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/proveedores-dotaciones",
+      "handler": "proveedores-dotaciones.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/proveedores-dotaciones/:id",
+      "handler": "proveedores-dotaciones.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/proveedores-dotaciones/:id",
+      "handler": "proveedores-dotaciones.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

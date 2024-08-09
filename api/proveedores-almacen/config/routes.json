@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/proveedores-almacens",
+      "handler": "proveedores-almacen.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proveedores-almacens/count",
+      "handler": "proveedores-almacen.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proveedores-almacens/:id",
+      "handler": "proveedores-almacen.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/proveedores-almacens",
+      "handler": "proveedores-almacen.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/proveedores-almacens/:id",
+      "handler": "proveedores-almacen.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/proveedores-almacens/:id",
+      "handler": "proveedores-almacen.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "actividades",
+  "info": {
+    "name": "Actividad",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "elaboro": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "existenMateriasPrimas": {
+      "type": "boolean",
+      "default": false
+    },
+    "existenProductoResultante": {
+      "type": "boolean",
+      "default": false
+    },
+    "nombreActividad": {
+      "type": "string"
+    },
+    "existenMateriasPrimasPendientes": {
+      "type": "boolean",
+      "default": false
+    },
+    "productosResultantes": {
+      "via": "actividad",
+      "collection": "producto-resultante"
+    },
+    "porcentajeProductoResultante": {
+      "type": "decimal",
+      "default": 0
+    },
+    "materiasPrimas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "materias-primas.materias-primas"
+    },
+    "pedido_producto": {
+      "via": "actividades",
+      "model": "pedido-productos"
+    },
+    "actividadPiezasSobrantes": {
+      "model": "actividad-piezas-sobrantes"
+    }
+  }
+}

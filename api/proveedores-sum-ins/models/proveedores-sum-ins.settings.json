@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proveedores_sum_ins",
+  "info": {
+    "name": "ProveedoresSumIns",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombreEmpresa": {
+      "type": "string",
+      "required": true
+    },
+    "direccion": {
+      "type": "string",
+      "required": true
+    },
+    "telefono": {
+      "type": "integer",
+      "required": true
+    },
+    "nombreContacto": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "nit": {
+      "type": "string"
+    },
+    "cc": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proveedores_tipo_tests",
+  "info": {
+    "name": "ProveedoresTipoTest",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "tipoProveedor": {
+      "type": "string"
+    },
+    "cedula": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}

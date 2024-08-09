@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bodegases",
+      "handler": "bodegas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bodegases/count",
+      "handler": "bodegas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bodegases/:id",
+      "handler": "bodegas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bodegases",
+      "handler": "bodegas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bodegases/:id",
+      "handler": "bodegas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bodegases/:id",
+      "handler": "bodegas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

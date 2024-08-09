@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materias_primas_articulos_seleccionables",
+  "info": {
+    "name": "MateriasPrimasArticulosSeleccionables",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "codigo": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "item": {
+      "type": "string",
+      "required": true
+    },
+    "stock": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

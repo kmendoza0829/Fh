@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proveedores_dotaciones",
+  "info": {
+    "name": "ProveedoresDotaciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombreEmpresa": {
+      "type": "string",
+      "required": true
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "integer"
+    },
+    "nombreContacto": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "nit": {
+      "type": "string"
+    },
+    "cc": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materias_primas_recepcions",
+  "info": {
+    "name": "MateriasPrimasRecepcion",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "tipoMateriaPrima": {
+      "model": "materias-primas-articulos-seleccionables"
+    },
+    "cantidad": {
+      "type": "integer"
+    },
+    "unidadMedida": {
+      "type": "string"
+    },
+    "precioCompra": {
+      "type": "integer"
+    },
+    "proveedor": {
+      "model": "proveedores"
+    },
+    "remisionProveedor": {
+      "type": "string"
+    },
+    "ordenCompra": {
+      "type": "string"
+    },
+    "nCertificadoColada": {
+      "type": "string"
+    },
+    "inspeccionQuimicas": {
+      "type": "string"
+    },
+    "inspeccionMecanicas": {
+      "type": "string"
+    },
+    "inspeccionDureza": {
+      "type": "string"
+    },
+    "inspeccionOtros": {
+      "type": "string"
+    },
+    "productos": {
+      "collection": "pedido-productos"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "criteriosAcept": {
+      "collection": "criterios-aceptacion"
+    },
+    "pedido": {
+      "model": "pedidos"
+    },
+    "evidencias": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "bodega": {
+      "model": "bodega-almacen"
+    },
+    "fechaVencimiento": {
+      "type": "date"
+    },
+    "observaciones": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/informe-revision-dimencional-estructuras",
+      "handler": "informe-revision-dimencional-estructuras.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/informe-revision-dimencional-estructuras/count",
+      "handler": "informe-revision-dimencional-estructuras.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/informe-revision-dimencional-estructuras/:id",
+      "handler": "informe-revision-dimencional-estructuras.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/informe-revision-dimencional-estructuras",
+      "handler": "informe-revision-dimencional-estructuras.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/informe-revision-dimencional-estructuras/:id",
+      "handler": "informe-revision-dimencional-estructuras.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/informe-revision-dimencional-estructuras/:id",
+      "handler": "informe-revision-dimencional-estructuras.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

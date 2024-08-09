@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/materias-primas-articulos-seleccionables",
+      "handler": "materias-primas-articulos-seleccionables.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/materias-primas-articulos-seleccionables/count",
+      "handler": "materias-primas-articulos-seleccionables.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/materias-primas-articulos-seleccionables/:id",
+      "handler": "materias-primas-articulos-seleccionables.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/materias-primas-articulos-seleccionables",
+      "handler": "materias-primas-articulos-seleccionables.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/materias-primas-articulos-seleccionables/:id",
+      "handler": "materias-primas-articulos-seleccionables.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/materias-primas-articulos-seleccionables/:id",
+      "handler": "materias-primas-articulos-seleccionables.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

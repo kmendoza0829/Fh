@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_materias_primas_materias_primas",
+  "info": {
+    "name": "materiasPrimas",
+    "icon": "shopping-basket",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "solicitado": {
+      "type": "integer",
+      "min": 0,
+      "required": true
+    },
+    "sobrante": {
+      "type": "integer"
+    },
+    "pendiente": {
+      "type": "integer",
+      "min": 0
+    },
+    "totalSolicitado": {
+      "type": "integer"
+    },
+    "totalSobrante": {
+      "type": "integer"
+    },
+    "totalEntregado": {
+      "type": "integer"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "loteColada": {
+      "type": "string"
+    },
+    "materiaPrima": {
+      "model": "materias-primas-articulos-seleccionables"
+    }
+  }
+}

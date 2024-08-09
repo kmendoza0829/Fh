@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modificaciones_personal_registros",
+  "info": {
+    "name": "modificacionesPersonalRegistros"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "fecha": {
+      "type": "date",
+      "required": true
+    },
+    "hora": {
+      "type": "time",
+      "required": true
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

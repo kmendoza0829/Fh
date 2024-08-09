@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pedido-despachos",
+      "handler": "pedido-despachos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedido-despachos/count",
+      "handler": "pedido-despachos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pedido-despachos/:id",
+      "handler": "pedido-despachos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pedido-despachos",
+      "handler": "pedido-despachos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/multiples-despachos",
+      "handler": "pedido-despachos.createMultiplesDespachos",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pedido-despachos/:id",
+      "handler": "pedido-despachos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pedido-despachos/:id",
+      "handler": "pedido-despachos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

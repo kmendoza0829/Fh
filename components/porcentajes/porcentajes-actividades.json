@@ -1,0 +1,111 @@
+{
+  "collectionName": "components_porcentajes_porcentajes_actividades",
+  "info": {
+    "name": "porcentajesActividades",
+    "icon": "percentage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "corte": {
+      "type": "integer",
+      "default": 0,
+      "max": 100,
+      "min": 0
+    },
+    "punzonado": {
+      "type": "integer",
+      "min": 0,
+      "default": 0,
+      "max": 100
+    },
+    "roscado": {
+      "type": "integer",
+      "default": 0,
+      "max": 100,
+      "min": 0
+    },
+    "figurado": {
+      "type": "integer",
+      "default": 0,
+      "max": 100,
+      "min": 0
+    },
+    "marcado": {
+      "type": "integer",
+      "default": 0,
+      "max": 100,
+      "min": 0
+    },
+    "soldadura": {
+      "type": "integer",
+      "default": 0,
+      "max": 100,
+      "min": 0
+    },
+    "inyeccion": {
+      "type": "integer",
+      "default": 0,
+      "max": 100,
+      "min": 0
+    },
+    "galvanizado": {
+      "type": "integer",
+      "default": 0,
+      "max": 100,
+      "min": 0
+    },
+    "pintura": {
+      "type": "integer",
+      "default": 0,
+      "max": 100,
+      "min": 0
+    },
+    "fundicion": {
+      "type": "integer",
+      "default": 0,
+      "max": 100,
+      "min": 0
+    },
+    "registrarCorte": {
+      "type": "boolean",
+      "default": false
+    },
+    "registrarPunzonado": {
+      "type": "boolean",
+      "default": false
+    },
+    "registrarRoscado": {
+      "type": "boolean",
+      "default": false
+    },
+    "registrarFigurado": {
+      "type": "boolean",
+      "default": false
+    },
+    "registrarMarcado": {
+      "type": "boolean",
+      "default": false
+    },
+    "registrarSoldadura": {
+      "type": "boolean",
+      "default": false
+    },
+    "registrarInyeccion": {
+      "type": "boolean",
+      "default": false
+    },
+    "registrarGalvanizado": {
+      "type": "boolean",
+      "default": false
+    },
+    "registrarPintura": {
+      "type": "boolean",
+      "default": false
+    },
+    "registrarFundicion": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ensayos_mecanicos",
+  "info": {
+    "name": "EnsayosMecanicos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "descripcion": {
+      "type": "string"
+    },
+    "cliente": {
+      "model": "clientes"
+    },
+    "norma": {
+      "type": "string"
+    },
+    "informe": {
+      "type": "string"
+    },
+    "fechaEnsayo": {
+      "type": "string"
+    },
+    "cantidadMuestras": {
+      "type": "integer"
+    },
+    "archivos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

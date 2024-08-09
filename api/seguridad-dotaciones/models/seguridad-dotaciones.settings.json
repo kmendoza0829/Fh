@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seguridad_dotaciones",
+  "info": {
+    "name": "SeguridadDotaciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "descripcion": {
+      "type": "string"
+    },
+    "tallaProducto": {
+      "type": "string"
+    },
+    "stockProducto": {
+      "type": "integer"
+    },
+    "proveedor": {
+      "model": "proveedores-dotaciones"
+    }
+  }
+}

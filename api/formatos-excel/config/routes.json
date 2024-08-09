@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/formatos-excel",
+      "handler": "formatos-excel.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/formatos-excel",
+      "handler": "formatos-excel.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/formatos-excel",
+      "handler": "formatos-excel.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

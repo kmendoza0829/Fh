@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/inspec-liquidos-penetrantes",
+      "handler": "inspec-liquidos-penetrantes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inspec-liquidos-penetrantes/count",
+      "handler": "inspec-liquidos-penetrantes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/inspec-liquidos-penetrantes/:id",
+      "handler": "inspec-liquidos-penetrantes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/inspec-liquidos-penetrantes",
+      "handler": "inspec-liquidos-penetrantes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/inspec-liquidos-penetrantes/:id",
+      "handler": "inspec-liquidos-penetrantes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/inspec-liquidos-penetrantes/:id",
+      "handler": "inspec-liquidos-penetrantes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

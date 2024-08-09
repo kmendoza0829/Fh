@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bodega-almacens",
+      "handler": "bodega-almacen.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bodega-almacens/count",
+      "handler": "bodega-almacen.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bodega-almacens/:id",
+      "handler": "bodega-almacen.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bodega-almacens",
+      "handler": "bodega-almacen.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bodega-almacens/:id",
+      "handler": "bodega-almacen.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bodega-almacens/:id",
+      "handler": "bodega-almacen.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

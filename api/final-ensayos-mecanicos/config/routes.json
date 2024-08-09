@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/final-ensayos-mecanicos",
+      "handler": "final-ensayos-mecanicos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/final-ensayos-mecanicos/count",
+      "handler": "final-ensayos-mecanicos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/final-ensayos-mecanicos/:id",
+      "handler": "final-ensayos-mecanicos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/final-ensayos-mecanicos",
+      "handler": "final-ensayos-mecanicos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/final-ensayos-mecanicos/:id",
+      "handler": "final-ensayos-mecanicos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/final-ensayos-mecanicos/:id",
+      "handler": "final-ensayos-mecanicos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

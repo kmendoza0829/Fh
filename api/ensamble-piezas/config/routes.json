@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ensamble-piezas",
+      "handler": "ensamble-piezas.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ensamble-piezas/count",
+      "handler": "ensamble-piezas.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ensamble-piezas/:id",
+      "handler": "ensamble-piezas.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ensamble-piezas",
+      "handler": "ensamble-piezas.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ensamble-piezas/:id",
+      "handler": "ensamble-piezas.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ensamble-piezas/:id",
+      "handler": "ensamble-piezas.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

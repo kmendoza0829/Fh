@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedido_despachos",
+  "info": {
+    "name": "pedidoDespachos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "pedidoProductosDespachos": {
+      "collection": "pedidos-productos-despachos",
+      "via": "pedido_despacho"
+    },
+    "ordenDeCompra": {
+      "type": "string"
+    },
+    "pesoBruto": {
+      "type": "string"
+    },
+    "tipoEmpaque": {
+      "type": "string"
+    },
+    "transporteACargoDe": {
+      "type": "string"
+    },
+    "observaciones": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "conductor": {
+      "model": "empleados"
+    },
+    "placa": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "empresa": {
+      "type": "string"
+    },
+    "numeroGuia": {
+      "type": "string"
+    },
+    "pedido": {
+      "model": "pedidos"
+    },
+    "hora": {
+      "type": "time"
+    },
+    "envio": {
+      "type": "enumeration",
+      "enum": [
+        "propio",
+        "mensajeria"
+      ]
+    },
+    "numeroRemision": {
+      "type": "string"
+    },
+    "elaboro": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "cantBultosCajas": {
+      "type": "integer"
+    }
+  }
+}

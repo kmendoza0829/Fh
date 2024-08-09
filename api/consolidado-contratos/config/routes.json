@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/consolidado-contratos",
+      "handler": "consolidado-contratos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/consolidado-contratos/count",
+      "handler": "consolidado-contratos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/consolidado-contratos/:id",
+      "handler": "consolidado-contratos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/consolidado-contratos",
+      "handler": "consolidado-contratos.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/consolidado-contratos/:id",
+      "handler": "consolidado-contratos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/consolidado-contratos/:id",
+      "handler": "consolidado-contratos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

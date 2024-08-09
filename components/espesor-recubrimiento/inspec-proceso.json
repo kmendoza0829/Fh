@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_espesor_recubrimiento_inspec_procesos",
+  "info": {
+    "name": "InspecProceso",
+    "icon": "marker"
+  },
+  "options": {},
+  "attributes": {
+    "num1": {
+      "type": "decimal"
+    },
+    "num2": {
+      "type": "decimal"
+    },
+    "num3": {
+      "type": "decimal"
+    },
+    "num4": {
+      "type": "decimal"
+    },
+    "num5": {
+      "type": "decimal"
+    },
+    "num6": {
+      "type": "decimal"
+    },
+    "num7": {
+      "type": "decimal"
+    },
+    "num8": {
+      "type": "decimal"
+    },
+    "num9": {
+      "type": "decimal"
+    },
+    "num10": {
+      "type": "decimal"
+    },
+    "prom": {
+      "type": "decimal"
+    },
+    "norma": {
+      "type": "decimal"
+    },
+    "dif": {
+      "type": "decimal"
+    }
+  }
+}

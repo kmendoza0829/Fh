@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/proveedores-sum-ins",
+      "handler": "proveedores-sum-ins.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proveedores-sum-ins/count",
+      "handler": "proveedores-sum-ins.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proveedores-sum-ins/:id",
+      "handler": "proveedores-sum-ins.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/proveedores-sum-ins",
+      "handler": "proveedores-sum-ins.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/proveedores-sum-ins/:id",
+      "handler": "proveedores-sum-ins.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/proveedores-sum-ins/:id",
+      "handler": "proveedores-sum-ins.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

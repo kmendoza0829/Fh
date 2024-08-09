@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proveedores",
+  "info": {
+    "name": "proveedores",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "direccion": {
+      "type": "string",
+      "required": true
+    },
+    "telefono": {
+      "type": "integer",
+      "min": 0,
+      "required": true
+    },
+    "nombreEmpresa": {
+      "type": "string",
+      "required": true
+    },
+    "nombreContacto": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "nit": {
+      "type": "string"
+    },
+    "cc": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/proveedores-herras",
+      "handler": "proveedores-herra.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proveedores-herras/count",
+      "handler": "proveedores-herra.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proveedores-herras/:id",
+      "handler": "proveedores-herra.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/proveedores-herras",
+      "handler": "proveedores-herra.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/proveedores-herras/:id",
+      "handler": "proveedores-herra.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/proveedores-herras/:id",
+      "handler": "proveedores-herra.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

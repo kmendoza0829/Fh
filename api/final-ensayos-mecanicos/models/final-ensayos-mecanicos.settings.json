@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "final_ensayos_mecanicos",
+  "info": {
+    "name": "finalEnsayosMecanicos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "proyecto": {
+      "model": "ensayos-mecanicos"
+    },
+    "tipoPoste": {
+      "type": "string"
+    },
+    "fechaFabricacion": {
+      "type": "string"
+    },
+    "protocolo": {
+      "type": "string"
+    },
+    "ciudad": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "string"
+    },
+    "numMuestras": {
+      "type": "biginteger"
+    },
+    "cliente": {
+      "model": "clientes"
+    },
+    "norma": {
+      "type": "string"
+    },
+    "plano": {
+      "type": "string"
+    },
+    "inspector": {
+      "type": "string"
+    },
+    "archivos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

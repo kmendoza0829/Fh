@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bodegases",
+  "info": {
+    "name": "Bodega",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "bodegaEntrada": {
+      "type": "string"
+    },
+    "bodegaSalida": {
+      "type": "string"
+    },
+    "fechaMovimiento": {
+      "type": "date"
+    },
+    "encargado": {
+      "type": "string"
+    },
+    "cantidad": {
+      "type": "integer"
+    }
+  }
+}

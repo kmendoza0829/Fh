@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proveedores_herras",
+  "info": {
+    "name": "ProveedoresHerra",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombreEmpresa": {
+      "type": "string",
+      "required": true
+    },
+    "direccion": {
+      "type": "string",
+      "required": true
+    },
+    "telefono": {
+      "required": true,
+      "type": "integer"
+    },
+    "nombreContacto": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "nit": {
+      "type": "string"
+    },
+    "cc": {
+      "type": "string"
+    }
+  }
+}

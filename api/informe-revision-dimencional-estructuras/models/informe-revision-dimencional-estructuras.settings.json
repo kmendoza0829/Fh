@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "informe_revision_dimencional_estructuras",
+  "info": {
+    "name": "informeRevisionDimensionalEstructuras",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "empresa": {
+      "type": "string"
+    },
+    "funcionario": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "nit": {
+      "type": "string"
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "norma": {
+      "type": "string"
+    },
+    "numCertificadoCidet": {
+      "type": "integer"
+    },
+    "informe": {
+      "type": "string"
+    },
+    "interventor": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "string"
+    },
+    "archivos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

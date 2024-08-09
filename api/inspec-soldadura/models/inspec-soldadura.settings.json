@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inspec_soldaduras",
+  "info": {
+    "name": "inspecSoldadura",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "lote": {
+      "type": "integer"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "numInforme": {
+      "type": "integer"
+    },
+    "proyecto": {
+      "type": "string"
+    },
+    "codigoRef": {
+      "type": "string"
+    },
+    "informeEnsayo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "informe-ensayo-item.tipo-junta-seccion"
+    },
+    "archivos": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "elementoInspeccionado": {
+      "type": "string"
+    },
+    "anexo": {
+      "type": "string"
+    },
+    "plano": {
+      "type": "string"
+    }
+  }
+}

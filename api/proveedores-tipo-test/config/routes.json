@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/proveedores-tipo-tests",
+      "handler": "proveedores-tipo-test.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proveedores-tipo-tests/count",
+      "handler": "proveedores-tipo-test.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/proveedores-tipo-tests/:id",
+      "handler": "proveedores-tipo-test.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/proveedores-tipo-tests",
+      "handler": "proveedores-tipo-test.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/proveedores-tipo-tests/:id",
+      "handler": "proveedores-tipo-test.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/proveedores-tipo-tests/:id",
+      "handler": "proveedores-tipo-test.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

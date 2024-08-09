@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_menu_items",
+  "info": {
+    "name": "item",
+    "icon": "angle-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "children": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.dropdown"
+    },
+    "activado": {
+      "type": "boolean"
+    }
+  }
+}

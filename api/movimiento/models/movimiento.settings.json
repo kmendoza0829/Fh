@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movimientos",
+  "info": {
+    "name": "Movimiento",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "bodegaEntrada": {
+      "model": "bodega-almacen"
+    },
+    "bodegaSalida": {
+      "model": "bodega-almacen"
+    },
+    "encargado": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "cantidad": {
+      "type": "integer"
+    },
+    "fechaMovimiento": {
+      "type": "date"
+    },
+    "horaMovimiento": {
+      "type": "string"
+    },
+    "materiasPrimas": {
+      "model": "materias-primas-recepcion"
+    }
+  }
+}

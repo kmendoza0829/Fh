@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clientes",
+  "info": {
+    "name": "clientes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "nombreEmpresa": {
+      "type": "string"
+    },
+    "nit": {
+      "type": "string",
+      "unique": true
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "ciudad": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "nombreContacto": {
+      "type": "string"
+    },
+    "sedes": {
+      "collection": "sede"
+    },
+    "pedidos": {
+      "collection": "pedidos",
+      "via": "cliente"
+    },
+    "pais": {
+      "type": "string"
+    }
+  }
+}

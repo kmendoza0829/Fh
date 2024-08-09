@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "productos_pendientes",
+  "info": {
+    "name": "productosPendientes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "codigoProducto": {
+      "type": "string"
+    },
+    "pedido_producto": {
+      "via": "productos_pendiente",
+      "model": "pedido-productos"
+    },
+    "cantidadPendiente": {
+      "type": "integer"
+    },
+    "ensamble_pieza": {
+      "via": "productos_pendiente",
+      "model": "ensamble-piezas"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "inspec_proceso_pinturas",
+  "info": {
+    "name": "inspecProcesoPintura",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "dia": {
+      "type": "date"
+    },
+    "pedido": {
+      "model": "pedidos"
+    },
+    "temperatura": {
+      "type": "decimal"
+    },
+    "espesorRecubrimiento": {
+      "type": "component",
+      "repeatable": false,
+      "component": "espesor-recubrimiento.inspec-proceso"
+    },
+    "turno": {
+      "type": "string"
+    },
+    "pedidoProducto": {
+      "model": "pedido-productos"
+    },
+    "velocidad": {
+      "type": "decimal"
+    },
+    "adherencia": {
+      "type": "decimal"
+    },
+    "curado": {
+      "type": "string"
+    }
+  }
+}

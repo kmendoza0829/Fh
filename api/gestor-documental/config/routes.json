@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/gestor-documentals",
+      "handler": "gestor-documental.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gestor-documentals/count",
+      "handler": "gestor-documental.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/gestor-documentals/:id",
+      "handler": "gestor-documental.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/gestor-documentals",
+      "handler": "gestor-documental.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/gestor-documentals/:id",
+      "handler": "gestor-documental.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/gestor-documentals/:id",
+      "handler": "gestor-documental.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

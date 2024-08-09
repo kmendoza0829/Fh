@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipo_productos",
+  "info": {
+    "name": "tipoProductos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string"
+    },
+    "stock": {
+      "type": "integer"
+    },
+    "unidadMedida": {
+      "type": "string"
+    },
+    "codigoProducto": {
+      "type": "string"
+    },
+    "pedido_productos": {
+      "via": "tipo_producto",
+      "collection": "pedido-productos"
+    },
+    "ensamble_piezas": {
+      "via": "tipo_producto",
+      "collection": "ensamble-piezas"
+    }
+  }
+}
